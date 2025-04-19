@@ -85,13 +85,15 @@ class MLP:
             if i == 0 or i == tamanho-1:
                 camada = Camada(num_neuronios_por_camada[i], percurso[i], self.dropout_p)
             else:
-                camada = Camada(num_neuronios_por_camada[i], percurso[i], self.dropout_p, 1) #Quando é uma camada de entrada ou de saída
+                camada = Camada(num_neuronios_por_camada[i], percurso[i], self.dropout_p, 1) # Quando é uma camada de entrada ou de saída
             camadas.append(camada)
             
         self.camadas = camadas
 ```
 #### 🌱 Na classe Camada
-<p align="justify"> A variável <em>camada_visivel</em> indica se na classe <em>MLP</em> está instanciando uma variável oculta ou uma visível (entrada ou saída). Pois, caso seja uma camada de saída
+<p align="justify">
+Na classe <em>MLP</em>, a variável <em>camada_visivel</em> indica se está sendo instanciada uma camada oculta ou uma camada visível (entrada ou saída).  Caso seja uma camada de entrada ou de saída, indicada por <em>camada_visivel = 1</em>, nenhum neurônio será zerado, ou seja, essa camada não passará pelo <em>dropout</em>.</p>
+
 
 ```python
 class Camada:
@@ -110,7 +112,8 @@ class Camada:
         dados_de_saida = []
         
         for neuronio in self.neuronios:
-            if self.camada_visivel == 0 and random.random() < self.dropout_p:
+            # Caso não seja uma camada visível e o random.random() seja menor que a probabilidade P
+            if self.camada_visivel == 0 and random.random() < self.dropout_p: 
                 informacao = Valor(0)
             else:
                 informacao = neuronio(x)
