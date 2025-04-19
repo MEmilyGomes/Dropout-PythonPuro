@@ -126,17 +126,19 @@ class Camada:
 ```
 
 
-## 🔢 Resultados Obtidos
+## 🔢 Resultados obtidos
 <p align="justify">
 
 
 ## 😁 Conclusão
 <p align="justify">
+A partir deste notebook, foi possível concluir que a implementação de <em>dropout</em> em uma MLP desenvolvida em Python puro é uma das estratégias válidas para evitar o <em>overfitting</em> nos dados. Isso se mostrou evidente por meio da curva de aprendizado apresentada na seção <em>Resultados obtidos</em>. Além disso, com o <em>Monte Carlo Dropout</em> [...]
+</p>
 
 ## 🖇️ Informações técnicas
 * Linguagem de programação: `Python 3.9`
 * Software:  `Jupyter Notebook`
-* Bibliotecas e Módulos: `Random`, `Matplotlib`
+* Bibliotecas e Módulos: `zipfile`,`Random`, `Matplotlib`, `os`, `Pandas`, `Math`, `scikit-learn`
 <br>
 
 ## 👩‍🦳 Referências
