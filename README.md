@@ -131,14 +131,15 @@ class Camada:
 <p align="justify"> A curva de aprendizado foi um dos métodos que utilizamos tanto para avaliar o quanto o modelo estava aprendendo durante as épocas quanto para verificar se o regularizador avaliado — o dropout — estava sendo efetivo na generalização da rede. Ao conseguir generalizar a rede, haveria uma piora na perda do treino e uma diminuição da perda dos dados de validação. Como esperado, houve queda na loss, e a dos dados de validação foi menor do que a dos dados de treino, o que nos levou a inferir que o regularizador foi implementado com sucesso. Contudo, como a acurácia encontrada foi de $64,91\%$, a mesma do modelo Dummy, concluímos que ainda não encontramos a melhor estratégia para lidar com os dados do notebook.
 </p>
 
+<div align="center">
+  <img src="https://github.com/MEmilyGomes/Dropout-PythonPuro/blob/main/Imagens/curva.png?raw=true" alt="Curva de aprendizado" width="800"/>
+</div>
+
+
 ## 😁 Conclusão
 <p align="justify">
 Ao final, como esperado a partir da implementação do regularizador Dropout, os dados de validação apresentaram melhor desempenho em comparação aos dados de treino. No entanto, a acurácia encontrada para a rede treinada foi igual a de um modelo Dummy, o que pode significar que a estrutura não foi complexa o suficiente para encontrar parâmetros robustos que pudessem capturar a complexidade dos dados. Portanto, tem-se que apesar da implementação bem-sucedida do dropout, foi possível concluir que essa estratégia não foi eficaz para o dados utilizados no notebook.
 </p>
-
-<div align="center">
-  <img src="Imagens/curva.png" alt="Descrição da imagem" width="1000"/>
-</div>
 
 
 ## 🖇️ Informações técnicas
