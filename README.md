@@ -127,8 +127,8 @@ class Camada:
 
 
 ## 🔢 Resultados obtidos
-<p align="justify">
-
+<p align="justify"> A curva de aprendizado foi um dos métodos que utilizamos tanto para avaliar o quanto o modelo estava aprendendo durante as épocas quanto para verificar se o regularizador avaliado — o dropout — estava sendo efetivo na generalização da rede. Ao conseguir generalizar a rede, haveria uma piora na perda do treino e uma diminuição da perda dos dados de validação. Como esperado, houve queda na loss, e a dos dados de validação foi menor do que a dos dados de treino, o que nos levou a inferir que o regularizador foi implementado com sucesso. Contudo, como a acurácia encontrada foi de $64,91\%$, a mesma do modelo Dummy, concluímos que ainda não encontramos a melhor estratégia para lidar com os dados do notebook.
+</p>
 
 ## 😁 Conclusão
 <p align="justify">
