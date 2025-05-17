@@ -165,7 +165,7 @@ Ao final, como esperado a partir da implementação do regularizador Dropout, os
 
 #### Para o Repositório GitHub:
 * Emily Gomes: README
-* Júlia Guede: 
+* Júlia Guedes: Post do Notebook.
 
 **Orientação:** Prof. Dr. Daniel R. Cassar.
 
