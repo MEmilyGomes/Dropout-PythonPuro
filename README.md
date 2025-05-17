@@ -113,8 +113,7 @@ class Camada:
         dados_de_saida = []
         
         for neuronio in self.neuronios:
-            # Caso não seja uma camada visível e o random.random() seja menor que a probabilidade P
-            if self.camada_visivel == 0 and random.random() < self.dropout_p: 
+            if self.camada_visivel == 1 and random.random() < self.dropout_p:
                 informacao = Valor(0)
             else:
                 informacao = neuronio(x)
@@ -123,7 +122,7 @@ class Camada:
         if len(dados_de_saida) == 1:
             return dados_de_saida[0]
         else:        
-            return dados_de_saida 
+            return dados_de_saida
 ```
 
 
